@@ -14,6 +14,7 @@ h4{
 
 body{
     position: relative;
+    background-color: #f5f9fd;
     /* padding-top: 80px; */
     font-family: 'Montserrat', sans-serif;
     color: #33475b;
@@ -30,12 +31,24 @@ body{
     width: 100%;
 }
 
+.w75{
+    width: 75%;
+}
+
+.w70{
+    width: 70%;
+}
+
 .w50{
     width: 50%;
 }
 
 .w333{
     width: 33.3%;
+}
+
+.w30{
+    width: 30%;
 }
 
 .w25{
@@ -112,6 +125,10 @@ header .header-top{
     background-color: #f5f9fd;
 }
 
+header .header-bottom{
+    background-color: white;
+}
+
 header .header-top .container .left-side nav ul li:nth-child(2){
     height: 18px;
     width: 2px;
@@ -172,7 +189,7 @@ header .header-top .container .right-side nav ul li:first-child a{
 }
 
 /* MAIN */
-
+/* content1 */
 main .content1 .container{
     text-align: center;
     padding: 50px 10%;
@@ -187,5 +204,60 @@ main .content1 .container h2{
     font-size: 30px;
     margin-bottom: 22px;
 }
+
+/* content2 */
+.content2 .container{
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.content2 .container .left-side{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.content2 .container .left-side img{
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.content2 .container .left-side a{
+    min-width: 150px;
+}
+
+.content2 .container .right-side{
+    padding: 70px 120px 70px 50px;
+}
+
+.content2 .container .right-side h2{
+    margin-bottom: 36px;
+}
+
+.content2 .container .right-side p,
+.content2 .container .right-side p + h2{
+    margin-bottom: 22px;
+}
+
+.content2 .container .right-side p + h2{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.content2 .container .right-side ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.content2 .container .right-side ul li::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f058";
+    color: #fe775a;
+    margin-right: 10px;
+}
+
 
 
