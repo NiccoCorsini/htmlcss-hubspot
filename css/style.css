@@ -315,6 +315,55 @@ main .content1 .container h2{
     line-height: 22px;
 }
 
+/* content4 */
+.content4{
+    background-image: linear-gradient(to right, #02a6bb, #07b6ad);
+    padding: 60px 0 35px;
+    color: white;
+    text-align: center;
+}
+
+.content4 .container h2{
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.content4 .container p{
+    margin-bottom: 55px;
+}
+
+.content4 .container [class^="col"]{
+    padding: 25px 0;
+}
+
+.content4 .container [class^="col"] img,
+.content4 .container [class^="col"] h2{
+    margin-bottom: 15px;
+}
+
+.content4 .container [class^="col"] h2{
+    display: inline-block;
+    font-size: 40px;
+}
+
+.content4 .container [class^="col"] h2 + span{
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+    font-size: 28px;
+}
+
+.content4 .container [class^="col"]:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.content4 .container hr{
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+
+
 
 
 
