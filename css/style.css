@@ -98,6 +98,13 @@ p{
     padding: 20px;
 }
 
+.btn.btn-marm{
+    border: 1px solid transparent;
+    background-color: #dadee0;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
 /* HEADER */
 header .container [class*="side"] nav ul li{
     display: inline-block;
@@ -428,4 +435,82 @@ main .content5 .container .bottom .right-side{
 
 main .content5 .container .bottom .right-side img{
     width: 320px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #32495b;
+    color: #dadee0;
+}
+
+footer .container .top{
+    padding: 40px 0 60px;
+}
+
+footer .container ul li{
+    list-style: none;
+}
+
+footer .container ul li a{
+    color: #dadee0;
+}
+
+footer .container [class^=col] ul li{
+    list-style: none;
+    line-height: 38px;
+}
+
+footer .container .top [class^=col] h3{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+footer .container .top .col4 ul li:nth-last-child(2) a{
+    color: #32495b; 
+}
+
+footer .container .top .col4 ul li:last-child a:not(:last-child){
+    margin-right: 26px;
+}
+
+footer .container .bottom .top ul{
+    text-align: center;
+}
+
+footer .container .bottom .top ul li{
+    display: inline-block;
+    line-height: 60px;
+}
+
+footer .container .bottom .top ul li:not(:last-child){
+    margin-right: 22px;
+}
+
+footer .container .bottom .top hr{
+    border: none;
+    border-bottom: 1px solid #dadee0;
+}
+
+footer .container .bottom .bottom{
+    padding-bottom: 50px;
+}
+
+footer .container .bottom .bottom .left-side div{
+    color: white;
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+footer .container .bottom .bottom .right-side{
+    text-align: right;
+}
+
+footer .container .bottom .bottom .right-side ul li{
+    display: inline-block;
+}
+
+footer .container .bottom .bottom .right-side ul li:not(:last-child){
+    margin-right: 22px;
 }
