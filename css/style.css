@@ -68,7 +68,6 @@ body{
 a{
     text-decoration: none;
     color: #33475b;
-    /* text-transform: uppercase; */
     transition: 0.5s;
 }
 
@@ -206,53 +205,53 @@ main .content1 .container h2{
 }
 
 /* content2 */
-.content2 .container{
+main .content2 .container{
     margin-bottom: 55px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
 
-.content2 .container .left-side{
+main .content2 .container .left-side{
     text-align: center;
     padding-top: 70px;
 }
 
-.content2 .container .left-side img{
+main .content2 .container .left-side img{
     width: 150px;
     margin-bottom: 24px;
 }
 
-.content2 .container .left-side a{
+main .content2 .container .left-side a{
     min-width: 150px;
 }
 
-.content2 .container .right-side{
+main .content2 .container .right-side{
     padding: 70px 120px 70px 50px;
 }
 
-.content2 .container .right-side h2{
+main .content2 .container .right-side h2{
     margin-bottom: 36px;
 }
 
-.content2 .container .right-side p,
-.content2 .container .right-side p + h2{
+main .content2 .container .right-side p,
+main .content2 .container .right-side p + h2{
     margin-bottom: 22px;
 }
 
-.content2 .container .right-side p + h2{
+main .content2 .container .right-side p + h2{
     text-transform: uppercase;
     font-size: 20px;
 }
 
-.content2 .container .right-side ul li{
+main .content2 .container .right-side ul li{
     list-style: none;
     display: inline-block;
     margin-right: 25px;
 }
 
-.content2 .container .right-side ul li::before,
-.content3 .container [class^=col] ul li::before{
+main .content2 .container .right-side ul li::before,
+main .content3 .container [class^=col] ul li::before{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f058";
@@ -261,11 +260,11 @@ main .content1 .container h2{
 }
 
 /* content3 */
-.content3 .container{
-    margin-bottom: 55px;
+main .content3 .container{
+    margin-bottom: 60px;
 }
 
-.content3 .container [class^=col]{
+main .content3 .container [class^=col]{
     padding: 25px 35px 15px;
     text-align: center;
     background-color: white;
@@ -273,20 +272,20 @@ main .content1 .container h2{
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
 
-.content3 .container [class^=col]:not(:last-child){
+main .content3 .container [class^=col]:not(:last-child){
     margin-right: 5%;
 }
 
-.content3 .container [class^=col] img{
+main .content3 .container [class^=col] img{
     height: 110px;
     margin-bottom: 35px;
 }
 
-.content3 .container [class^=col] p{
+main .content3 .container [class^=col] p{
     margin-bottom: 55px;
 }
 
-.content3 .container [class^=col] p + h2::before{
+main .content3 .container [class^=col] p + h2::before{
     content: '';
     display: inline-block;
     width: 100%;
@@ -295,76 +294,138 @@ main .content1 .container h2{
     margin-bottom: 35px;
 }
 
-.content3 .container [class^=col] h2{
+main .content3 .container [class^=col] h2{
     margin-bottom: 35px;
 }
 
-.content3 .container [class^=col] p + h2{
+main .content3 .container [class^=col] p + h2{
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 45px;
 }
 
-.content3 .container [class^=col] ul{
+main .content3 .container [class^=col] ul{
     text-align: left;
     margin-bottom: 35px;
 }
 
-.content3 .container [class^=col] ul li{
+main .content3 .container [class^=col] ul li{
     list-style: none;
     line-height: 22px;
 }
 
 /* content4 */
-.content4{
+main .content4{
     background-image: linear-gradient(to right, #02a6bb, #07b6ad);
     padding: 60px 0 35px;
     color: white;
     text-align: center;
 }
 
-.content4 .container h2{
+main .content4 .container h2{
     font-size: 32px;
     margin-bottom: 45px;
 }
 
-.content4 .container p{
+main .content4 .container p{
     margin-bottom: 55px;
 }
 
-.content4 .container [class^="col"]{
+main .content4 .container [class^="col"]{
     padding: 25px 0;
 }
 
-.content4 .container [class^="col"] img,
-.content4 .container [class^="col"] h2{
+main .content4 .container [class^="col"] img,
+main .content4 .container [class^="col"] h2{
     margin-bottom: 15px;
 }
 
-.content4 .container [class^="col"] h2{
+main .content4 .container [class^="col"] h2{
     display: inline-block;
     font-size: 40px;
 }
 
-.content4 .container [class^="col"] h2 + span{
+main .content4 .container [class^="col"] h2 + span{
     position: relative;
     bottom: 3px;
     left: 2px;
     font-size: 28px;
 }
 
-.content4 .container [class^="col"]:not(:last-child){
+main .content4 .container [class^="col"]:not(:last-child){
     border-right: 1px solid white;
 }
 
-.content4 .container hr{
+main .content4 .container hr{
     border: none;
     border-bottom: 1px solid white;
 }
 
+/* content5 */
+main .content5 .container{
+    padding: 60px 0;
+}
 
+main .content5 .container .top .left-side{
+    padding-left: 80px;
+    padding-right: 50px;
+}
 
+main .content5 .container .top .left-side h2{
+    font-size: 48px;
+    margin-bottom: 55px;
+}
 
+main .content5 .container .top .left-side p{
+    margin-bottom: 60px;
+}
 
+main .content5 .container .top .right-side .top a img,
+main .content5 .container .top .right-side .bottom a img{
+    width: 130px;
+    vertical-align: middle;
+}
 
+main .content5 .container .top .right-side .top a,
+main .content5 .container .top .right-side .bottom a{
+    display: inline-block;
+    line-height: 75px;
+}
 
+main .content5 .container .top .right-side .top a:not(:last-child),
+main .content5 .container .top .right-side .bottom a:not(:last-child){
+    margin-right: 18px;
+}
+
+main .content5 .container .top .right-side .top,
+main .content5 .container .top .right-side .bottom{
+    text-align: center;
+}
+
+main .content5 .container .bottom .left-side{
+    padding-top: 40px;
+    padding-right: 120px;
+}
+
+main .content5 .container .bottom .left-side h2{
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+main .content5 .container .bottom .left-side p{
+    font-size: 14px;
+    margin-bottom: 34px;
+}
+
+main .content5 .container .bottom .left-side div{
+    font-size: 12px;
+    margin-top: 34px;
+}
+
+main .content5 .container .bottom .right-side{
+    text-align: right;
+}
+
+main .content5 .container .bottom .right-side img{
+    width: 320px;
+}
