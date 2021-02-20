@@ -149,7 +149,7 @@ header.top .container .right-side nav ul li div.a:hover .search input[type="text
 }
 
 header.bottom .container .right-side nav ul li .a:hover,
-header.bottom .container .right-side nav ul li a:hover{
+header.bottom .container .right-side nav ul li > a:hover{
     border-bottom: 4px solid #33475b;
 }
 
@@ -227,7 +227,7 @@ header.bottom{
 }
 
 header.bottom .container .right-side nav ul li .a,
-header.bottom .container .right-side nav ul li a{
+header.bottom .container .right-side nav ul li > a{
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
 }
