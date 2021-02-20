@@ -375,9 +375,9 @@ header.top .container .right-side nav ul li div.a{
 }
 
 header.top .container .right-side nav ul li div.a .search{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 0px;
+    right: 606px;
     opacity: 0;
     transition: 0.5s;
 }
@@ -390,6 +390,14 @@ header.top .container .right-side nav ul li div.a .search input[type="text"]{
     transition: 0.5s;
     width: 1px;
     text-align: left;
+    outline: none;
+}
+
+header.top .container .right-side nav ul li div.a i{
+    position: absolute;
+    top: -12px;
+    right: 4px;
+    z-index: 9;
 }
 
 /* JUMBOTRON */
