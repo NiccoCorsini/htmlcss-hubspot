@@ -163,7 +163,6 @@ header.bottom .container .right-side nav ul li .a:hover .dropdown{
     display: block;
 }
 
-
 /* footer */
 footer .container [class^=col] ul li a:hover,
 footer .container .bottom .bottom .right-side ul li a:hover{
@@ -180,6 +179,12 @@ footer .container .bottom .top ul li a:hover{
     color: white;
     border-bottom: 4px solid white !important;
 }
+
+/* footer chat */
+footer .chat a:hover{
+    box-shadow: 0px 10px 28px 0px rgba(0, 0, 0, 0.4);
+}
+/* ANIMATIONS END */
 
 /* HEADER */
 header .container [class*="side"] nav ul li{
@@ -749,4 +754,21 @@ footer .container .bottom .bottom .right-side ul li{
 
 footer .container .bottom .bottom .right-side ul li:not(:last-child){
     margin-right: 22px;
+}
+
+/* CHAT */
+footer .chat a{
+    z-index: 2;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 18px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    color: white;
+    background-color: #435b76;
+    border-radius: 50%;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
