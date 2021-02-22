@@ -238,7 +238,7 @@ header.bottom .container .right-side nav ul li a{
 
 /* header.bottom demo subsection "software" */
 header.bottom .container .right-side nav ul li .a{
-    position: relative;
+    /* position: relative; */
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown h3{
@@ -259,8 +259,10 @@ header.bottom .container .right-side nav ul li .a .dropdown{
     width: 860px;
     height: 415px;
     position: absolute;
-    top: 76px;
-    left: -60px;
+    /* top: 76px; */
+    /* left: -60px; */
+    top: 80px;
+    right: 15px;
     background-color: white;
     font-size: 10px;
     line-height: 20px;
@@ -268,7 +270,7 @@ header.bottom .container .right-side nav ul li .a .dropdown{
     overflow: hidden;
     border: 1px solid #f5f8fa;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
-    transform: 0.5s;
+    transition: 0.5s;
     display: none;
 }
 
@@ -289,6 +291,7 @@ header.bottom .container .right-side nav ul li .a .dropdown .right-side .top{
     padding-left: 15px;
     border-bottom: 1px solid #f5f8fa;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown .left-side h3{
@@ -330,6 +333,7 @@ header.bottom .container .right-side nav ul li .a .dropdown .right-side .minicon
     margin: 5px 15px 5px 0;
     padding: 16px 10px 5px 15px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown .right-side .minicontainer .al p{
