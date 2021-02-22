@@ -238,9 +238,9 @@ header.bottom .container .right-side nav ul li a{
 }
 
 /* header.bottom demo subsection "software" */
-header.bottom .container .right-side nav ul li .a{
-    /* position: relative; */
-}
+/* header.bottom .container .right-side nav ul li .a{
+    position: relative;
+} */
 
 header.bottom .container .right-side nav ul li .a .dropdown h3{
     font-size: 16px;
