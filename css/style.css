@@ -240,6 +240,11 @@ footer .chat:hover .chat-popup{
     visibility: visible;
     opacity: 1;
 }
+
+footer .chat-popup .privacy p > a:hover{
+    text-decoration: underline;
+    color: #18222c;
+}
 /* ANIMATIONS END */
 
 /* HEADER */
