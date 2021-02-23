@@ -32,11 +32,42 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">
+                            <div class="menu-language">
                                 <i class="fas fa-globe-europe"></i> English <i class="fas fa-chevron-down"></i>
-                            </a>
+
+                                <!-- dropdown language menu -->
+                                <div class="menu-language-dropdown">
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">日本語</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Deutsch</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Español</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Português</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Français</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="triangle"></div>
+                                
+                            </div>
                         </li>
+
                         <li></li>
+
                         <li>
                             <a href="#">Contact Us</a>
                         </li>
@@ -48,12 +79,15 @@
                 <nav>
                     <ul>
                         <li>
-                            <div class="a">
-                                <div class="search">
-                                    <input type="text" name="" id="" placeholder="Search">
-                                </div>
-                                <i class="fas fa-search"></i>
-                            </div>
+                            <form class="a">
+                               
+                                <input class="search" type="text" name="" id="" placeholder="Search">
+                                
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                
+                            </form>
                         </li>
                         <li>
                             <a class="btn" href="#">Log in</a>
@@ -88,11 +122,11 @@
                                 <!-- dropdown demo section "software" -->
                                 <div class="dropdown clearfix">
 
-                                    <div class="left-side float-left w25">
+                                    <div class="left-sid float-left w25">
                                         <h3>The HubSpot CRM Platform</h3>
                                     </div>
 
-                                    <div class="right-side float-left w75">
+                                    <div class="right-sid float-left w75">
 
                                         <div class="top float-left w100" href="#">
                                             <h3>Free Tools</h3>
@@ -516,7 +550,67 @@
         </section>
 
         <section class="chat">
-            <a href="#"><i class="fas fa-comments"></i></a>
+            <div class="chat-widget">
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="chat-popup">
+
+                <section class="chat-top">
+
+                    <div class="avatar-container">
+                        <img src="https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg" alt="HubBot">
+                    </div>
+                    
+                    <div class="online-container">
+                        <div class="online-status"></div>
+                    </div>
+
+                    <h3>HubBot</h3>
+
+                </section>
+
+                <section class="chat-middle">
+
+                    <img src="https://static.hsappstatic.net/bots-ui-app/ex/bot-avatar.jpg" alt="HubBot">
+
+                    <div class="message">
+                        <p>&#128075;  Want to chat about HubSpot? I'm here to help you find your way</p>
+                    </div>
+
+                    <div class="message">
+                        <p>What would you like to do?</p>
+                    </div>
+                    
+                    <a class="option1 btn-chat" href="#">Learn about products</a>
+                    <a class="option2 btn-chat" href="#">Learn about pricing</a>
+                    <a class="option3 btn-chat" href="#">Get educational content</a>
+
+                </section>
+
+                <hr>
+
+                <section class="privacy">
+                    <p>HubSpot uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For more information, check out our <a href="#">privacy policy.</a></p>
+                </section>
+
+                <hr>
+
+                <section class="bottom">
+
+                    <form action="#">
+
+                        <input type="text" placeholder="Choose an option">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                </section>
+
+            </div>
+
         </section>
 
     </footer>
