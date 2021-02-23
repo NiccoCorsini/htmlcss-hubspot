@@ -284,7 +284,7 @@ header.top .left-side nav ul li .menu-language .menu-language-dropdown{
     right: -18px;
     background-color: white;
     padding: 18px 22px;
-    z-index: 10;
+    z-index: 11;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 5px;
     border: 1px solid #007f9257;
@@ -320,6 +320,7 @@ header.top .left-side nav ul li .menu-language .triangle{
 /* language dropdown section end */
 
 header.bottom{
+    z-index: 10;
     line-height: 72px;
     position: -webkit-sticky;
     position: sticky;
@@ -498,10 +499,11 @@ header.top .container .right-side nav ul li form.a button{
 /* JUMBOTRON */
 .jumbotron{
     height: 600px;
-    background-color: #fef8ef;
+    /* background-color: #fef8ef; */
     background-image: url('../img/jumbotron.png');
     background-repeat: no-repeat;
     background-position: 110% 12%;
+    position: relative;
 }
 
 .jumbotron .container{
@@ -510,9 +512,19 @@ header.top .container .right-side nav ul li form.a button{
 
 .jumbotron .container .left-side{
     height: 100%;
-    background: linear-gradient(0.25turn, transparent, #fef8ef, transparent);
+    /* background: linear-gradient(0.25turn, transparent, #fef8ef, transparent); */
     padding-top: 70px;
     padding-right: 120px;
+}
+
+.jumbotron .bg-fix{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to top, #fef8ef, #fff3ed);
+    z-index: -1;
 }
 
 .jumbotron .container .left-side h1{
