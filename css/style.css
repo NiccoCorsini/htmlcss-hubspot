@@ -22,7 +22,7 @@ body{
 
 /* UTILITIES */
 .container{
-    width: 65%;
+    width: 72%;
     margin: 0 auto;
 }
 
@@ -165,7 +165,8 @@ a.btn:hover {
 
 /* header */
 header.top .left-side nav ul li a:hover,
-header.top .left-side nav ul li .menu-language:hover{
+header.top .left-side nav ul li .menu-language:hover,
+header.bottom .container .right-side nav ul li .a .dropdown-resources [class^="col"] .pl ul li a:hover{
     color: #00a5be;
     text-decoration: underline;
 }
@@ -182,8 +183,8 @@ header.top .left-side > nav > ul > li .menu-language:hover .menu-language-dropdo
     visibility: visible;
 }
 
-header.bottom .container .right-side nav ul li .a:hover,
-header.bottom .container .right-side nav ul li > a:hover{
+header.bottom .container .right-side > nav > ul > li > .a:hover,
+header.bottom .container .right-side > nav > ul > li > a:hover{
     border-bottom: 4px solid #33475b;
 }
 
@@ -202,6 +203,11 @@ header.bottom .container .right-side nav ul li .a:hover .dropdown{
     visibility: visible;
 }
 
+header.bottom .container .right-side nav ul li .a.resources:hover .dropdown-resources{
+    visibility: visible;
+    opacity: 1;
+}
+
 /* footer */
 footer .container [class^=col] ul li a:hover,
 footer .container .bottom .bottom .right-side ul li a:hover{
@@ -211,7 +217,6 @@ footer .container .bottom .bottom .right-side ul li a:hover{
 
 footer .container .col4 ul li:last-child a:hover{
     color: white;
-    /* border-bottom: 4px solid #00a5be !important; */
     transform: scale(1.4);
 }
 
@@ -356,12 +361,11 @@ header.bottom .container .right-side nav ul li .a .dropdown a{
 
 header.bottom .container .right-side nav ul li .a .dropdown {
     width: 860px;
-    height: 415px;
     position: absolute;
     top: 80px;
     right: 15px;
     background-color: white;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -371,10 +375,11 @@ header.bottom .container .right-side nav ul li .a .dropdown {
     visibility: hidden;
     transition: 0.3s ease-in-out;
     text-align: left;
+    border: 1px solid #007f9257;
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown .left-sid{
-    height: 335px;
+    height: 370px;
     line-height: 40px;
     text-align: center;
     padding: 0 15px;
@@ -406,16 +411,11 @@ header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicont
     text-align: left;
 }
 
-header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicontainer .al h3{
-    display: inline-block;
-}
-
-header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicontainer .al h3::before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f200";
-    color: #fe775a;
-    margin-right: 10px;
+header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicontainer .al img{
+    width: 38px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicontainer > .al{
@@ -424,10 +424,9 @@ header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicont
     padding: 16px 10px 5px 15px;
     border-radius: 5px;
     transition: 0.3s;
-}
-
-header.bottom .container .right-side nav ul li .a .dropdown .right-sid .minicontainer .al p{
-    padding-left: 28px;
+    position: relative;
+    padding-left: 43px;
+    min-width: 275px;
 }
 
 header.bottom .container .right-side nav ul li .a .dropdown .footer{
@@ -448,6 +447,45 @@ header.bottom .container .right-side nav ul li .a .dropdown .footer h3{
     margin-right: 15px;
 }
 /* header.bottom demo subsection end */
+
+/* header.bottom dropdown demo menu resources */
+header.bottom .container .right-side nav ul li .a .dropdown-resources{
+    width: 730px;
+    line-height: 28px;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    background-color: white;
+    text-align: left;
+    padding: 24px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid #007f9257;
+}
+
+header.bottom .container .right-side nav ul li .a .dropdown-resources [class^="col"] .pl{
+    padding: 0 12px 0 42px;
+    position: relative;
+}
+
+header.bottom .container .right-side nav ul li .a .dropdown-resources [class^="col"] .pl h3{
+    margin: 16px 0;
+}
+
+header.bottom .container .right-side nav ul li .a .dropdown-resources [class^="col"] .pl img{
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+header.bottom .container .right-side nav ul li .a .dropdown-resources [class^="col"] .pl ul li{
+    display: block;
+}
+/* header.bottom dropdown menu resources section end */
 
 header.top .container .left-side > nav > ul > li:nth-child(2){
     height: 18px;
@@ -499,7 +537,6 @@ header.top .container .right-side nav ul li form.a button{
 /* JUMBOTRON */
 .jumbotron{
     height: 600px;
-    /* background-color: #fef8ef; */
     background-image: url('../img/jumbotron.png');
     background-repeat: no-repeat;
     background-position: 110% 12%;
@@ -512,7 +549,6 @@ header.top .container .right-side nav ul li form.a button{
 
 .jumbotron .container .left-side{
     height: 100%;
-    /* background: linear-gradient(0.25turn, transparent, #fef8ef, transparent); */
     padding-top: 70px;
     padding-right: 120px;
 }
@@ -533,7 +569,7 @@ header.top .container .right-side nav ul li form.a button{
 }
 
 .jumbotron .container .left-side p{
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 26px;
 }
 
@@ -631,7 +667,7 @@ main .content3 .container{
 }
 
 main .content3 .container [class^=col]{
-    padding: 25px 35px 15px;
+    padding: 25px 45px 15px;
     text-align: center;
     background-color: white;
     border-radius: 5px;
@@ -770,7 +806,7 @@ main .content5 .container .top .right-side .bottom{
 
 main .content5 .container .bottom .left-side{
     padding-top: 40px;
-    padding-right: 120px;
+    padding-right: 100px;
 }
 
 main .content5 .container .bottom .left-side h2{
@@ -779,7 +815,7 @@ main .content5 .container .bottom .left-side h2{
 }
 
 main .content5 .container .bottom .left-side p{
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 34px;
 }
 
