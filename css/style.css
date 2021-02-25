@@ -667,7 +667,7 @@ main .content3 .container{
 }
 
 main .content3 .container [class^=col]{
-    padding: 25px 45px 15px;
+    padding: 25px 54px 15px;
     text-align: center;
     background-color: white;
     border-radius: 5px;
@@ -973,6 +973,7 @@ footer .chat .chat-popup{
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    z-index: 13;
 }
 
 footer .chat .chat-popup .chat-top{
